@@ -1,0 +1,292 @@
+/* styles.css */
+
+/* 重置一些基本的浏览器样式 */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置基本的字体和背景颜色 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* 容器样式 */
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 头部样式 */
+header {
+    background: #50b3a2;
+    color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 3px solid #1de8e8 3px;
+}
+
+/* 品牌标识样式 */
+#branding {
+    float: left;
+}
+
+#branding h1 {
+    margin: 0;
+}
+
+/* 导航菜单样式 */
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a:hover,
+nav ul li .current a {
+    color: #1de8e8 3px;
+    border-bottom: 2px solid #1de8e8 3px;
+    padding-bottom: 2px;
+}
+
+/* 主要内容区域样式 */
+#main {
+    padding: 30px 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 侧边栏样式 */
+#sidebar {
+    flex: 1;
+    margin-right: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-title {
+    color: #50b3a2;
+    margin-bottom: 20px;
+}
+
+/* 文本框样式 */
+#textbox {
+    flex: 2;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#textbox h2 {
+    color: #1de8e8 3px;
+}
+
+#textbox ul {
+    list-style: none;
+}
+
+#textbox ul li {
+    margin-bottom: 10px;
+}
+
+#textbox ul li strong {
+    color: #50b3a2;
+}
+
+/* 页脚样式 */
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #sidebar, #textbox {
+        flex: none;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+/* 文章样式 */
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* 联系方式列表样式 */
+ul {
+    list-style: none;
+    line-height: 1.8;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* 留言表单样式 */
+#message-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#message-form h3 {
+    color: #50b3a2;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background: #50b3a2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-group button:hover {
+    background: #1de8e8 3px;
+}
+
+/* 文章样式 */
+article {
+    float: left;
+    width: 60%;
+    text-align: left; /* 确保文本左对齐 */
+}
+
+/* 圆形照片样式 */
+.profile-photo {
+    width: 15px; /* 你可以根据需要调整大小 */
+    height: 15px; /* 你可以根据需要调整大小 */
+    border-radius: 50%; /* 使照片变为圆形 */
+    object-fit: cover; /* 保证图片比例 */
+    float: left; /* 使照片左浮动 */
+    margin-right: 20px; /* 与文本的间距 */
+    margin-bottom: 20px; /* 与底部的间距 */
+    border: 4px solid #50b3a2; /* 照片边框，你可以根据需要调整颜色和宽度 */
+}
+/* ...其他样式... */
+
+/* GitHub按钮样式 */
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #50b3a2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.github-button:hover {
+    background-color: #1de8e8 3px;
+}
+/* ...其他样式... */
+
+/* 文章样式 */
+article {
+    position: relative;
+    width: 100%;
+}
+
+/* 照片展示栏样式 */
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* 控制图片之间的间距 */
+    margin-top: 20px; /* 控制与文本的间距 */
+}
+
+.photo-gallery img {
+    flex: 0 0 auto; /* 防止图片伸缩 */
+    width: calc(33.333% - 10px); /* 三张图片平分空间，减去间距 */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    object-fit: cover; /* 保证图片比例 */
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ...其他样式... */

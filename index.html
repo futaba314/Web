@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #1de8e8 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #1de8e8 3px;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: url('') no-repeat 0 -100px;
+            text-align: center;
+            color: #1de8e8 3px;
+        }
+        section#showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        section#showcase p {
+            font-size: 20px;
+        }
+        section#main {
+            padding: 15px;
+            background: white;
+        }
+        section#main .content-title {
+            color: #50b3a2;
+        }
+        section#main article#about {
+            float: left;
+            width: 60%;
+        }
+        section#main aside#sidebar {
+            float: right;
+            width: 35%;
+            margin-top: 10px;
+        }
+        section#main aside#sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        section#main aside#sidebar ul li {
+            padding: 10px;
+            border: 1px solid #50b3a2;
+            background: #50b3a2;
+            color: white;
+        }
+        section#main aside#sidebar ul li:hover {
+            background:  #1de8e8 3px;
+        }
+        footer {
+            background: #1de8e8 3px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Self-introduction</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="skills.html">MY SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to my personal website!</h1>
+            <p>You'll get everything about me here</p>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="about">
+                <div class="content-title">ME</div>
+                <!-- 圆形照片 -->
+                <img src="C:\Users\ridic\Desktop\202332110206\新建文件夹\Here is the work\IMG_4599.gif" alt="Kimi" class="profile-photo">
+                <p>This is a simple website I have created, where you can find my basic information.</p>
+            </article>
+            <aside id="sidebar">
+                <div class="content-title">Achievement</div>
+                <ul>
+                    <li>Primary school graduation</li>
+                    <li>Junior high school graduation</li>
+                    <li>High school graduation</li>
+                    <li>Still alive!</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://github.com/futaba314" target="_blank" class="github-button">关注永雏塔菲喵，关注永雏塔菲谢谢喵</a>
+    </footer>
+</body>
+</html>
